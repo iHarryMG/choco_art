@@ -1,0 +1,24 @@
+body{
+background-image: url("../../images/background_images/login_background.jpg");
+color: #6e6951;
+}
+
+div.content{
+margin-top: 100px;
+}
+
+div.content table td{
+color: #d5a738;
+font-weight: bold;
+font-size: 12px;
+}
+
+div.content input, div.btn input {
+border: 1px solid gray;
+}
+
+div.btn input{
+margin-top: 10px;
+background-color: lightgray;
+}
+

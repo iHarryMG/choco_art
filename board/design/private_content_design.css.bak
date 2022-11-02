@@ -1,0 +1,51 @@
+body{
+margin: 0px;
+background-color: #fffef5;
+color: #6e6951;
+}
+
+table{
+width: 680px;
+color: black;
+font-family: "New Gulim";
+font-size: 14px;
+border-collapse: collapse;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+
+table td#title{
+background-color: #9bbb58;
+color: white;
+font-weight: bold;
+}
+
+table td#comment_title{
+background-color: #d7ef9e;
+color: black;
+font-weight: bold;
+}
+
+table td{
+border-top: 1px solid gray;
+border-bottom: 1px solid gray;
+padding: 10px;
+}
+
+table td#content{
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+table input{
+border: 1px solid gray;
+}
+
+div#close_btn{
+margin-left: 630px;
+}
+
+div#close_btn input{
+border: 1px solid gray;
+width: 50px;
+}

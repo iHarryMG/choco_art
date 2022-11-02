@@ -1,0 +1,59 @@
+body{
+margin: 0px;
+background-color: #fffef5;
+}
+
+table{
+border-collapse: collapse;
+width: 700px;
+color: #505050;
+font-size: 12px;
+}
+
+table#list{
+margin-top: -20px;
+}
+
+table#list tr#special_part td{
+border-bottom: none;
+}
+
+table#list td{
+border-bottom: 1px solid #b78e27;
+padding: 10px;
+}
+
+table td#special_part, tr#special_part, 
+td#title{
+font-size: 14px;
+}
+
+table td#page_number, #write_btn{
+padding-top: 10px;
+font-size: 16px;
+}
+
+td#norecords{
+padding-top: 30px;
+font-size: 14px;
+}
+
+table td#title{
+width: 330px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+a{
+color: #505050;
+text-decoration: none;
+}
+
+a:hover{
+color: #505050;
+text-decoration: underline;
+}
+
+img{
+border: none;
+}

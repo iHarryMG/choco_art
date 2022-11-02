@@ -1,0 +1,139 @@
+body{
+margin: 0px;
+background-color: BLACK;
+}
+
+div#bodywrap{
+position: absolute;
+left: 50%;
+margin-left: -640px;
+}
+
+/******************* MAIN-START ***********************/
+div.main{
+width: 1280px;
+height: 800px;
+position: absolute;
+}
+
+div.main img{
+margin:0px;
+
+}
+
+div#backgroundslideshow{
+position: absolute;
+top: 0px;
+}
+
+/*------------------ HEADERMENU-START-------------------*/
+div#headermenu ul{
+list-style-type: none;
+position: absolute;
+left: 100px;
+top: 20px;
+margin-top: 0px;
+font-family: "맑은 고딕 (본문)";
+font-size: 10px;
+}
+
+div#headermenu ul li{
+display: inline;
+padding-left: 6px;
+margin-right: 4px;
+color: white;
+}
+
+div#headermenu ul li a{
+text-decoration: none;
+color: white;
+}
+/*------------------ HEADERMENU-END -------------------*/
+/*----------------- LOGOSCRIPT-START ------------------*/
+div#logoscript{
+position: absolute;
+left: 120px;
+top: 100px;
+}
+/*----------------- LOGOSCRIPT-END -------------------*/
+/*----------------- EVENTSNOTICE-START -----------------*/
+div#eventsnotice{
+position: absolute;
+left: 150px;
+top: 400px;
+}
+
+div#eventsnotice h3{
+margin-left: 25px;
+color: white;
+font-family: "Times New Roman";
+}
+
+div#eventsnotice ul{
+list-style-type: disc;
+margin-top: -10px;
+color: white;
+font-size: 14px;
+font-family: "맑은 고딕 (본문)";
+}
+
+div#eventsnotice ul li a{
+text-decoration: none;
+color: white
+}
+
+div#eventsnotice ul li a:hover{
+text-decoration: underline;
+color: white
+}
+/*----------------- EVENTSNOTICE-END -------------------*/
+/*----------------- JEJUSCRIPT-START -------------------*/
+div#jejuscript img{
+position: absolute;
+left: 91px;
+top: 600px;
+}
+/*----------------- JEJUSCRIPT-END ---------------------*/
+/*----------------- FOOTERMENU-START -------------------*/
+div#footermenu ul{
+position: absolute;
+font-size: 12px;
+left: 400px;
+top: 720px;
+}
+
+div#footermenu ul li{
+display: inline;
+margin-right: 15px;
+color: white;
+}
+
+div#footermenu ul li a{
+text-decoration: none;
+color: white;
+font-family: "Arial Unicode MS";
+}
+/*----------------- FOOTERMENU-END ---------------------*/
+/*----------------- DISCLAIMER-START -------------------*/
+div#disclaimer img{
+position: absolute;
+left: 330px;
+top: 750px;
+}
+/*----------------- DISCLAIMER-END ---------------------*/
+/*----------------- JEJU SLIDESHOW-START -------------------*/
+div#jejuslideshow{
+position: absolute;
+left: 125px;
+top: 700px;
+}
+/*----------------- STONEMAN-END ---------------------*/
+
+/************************ MAIN-END **************************/
+
+/*********************** MENU-START *************************/
+div.menu{
+position: absolute;
+margin-left: 950px;
+}
+/********************** MENU-END **************************/

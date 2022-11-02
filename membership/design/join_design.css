@@ -1,0 +1,181 @@
+body{
+margin: 0px;
+background-color: #fffef5;
+}
+
+
+/*------------------ HEADERMENU-START ------------------*/
+div.header{
+z-index: 3;
+width: 1280px;
+height: 190px;
+position: absolute;
+left: 50%;
+top: 0px;
+margin-left:-640px;
+}
+
+/*------------------ HEADERMENU-END ------------------*/
+/*------------------ LOGINMENU-START-------------------*/
+div#loginmenu{
+z-index: 2;
+position: absolute;
+left: 835px;
+top: 0px;
+margin-top: 0px;
+}
+
+div#loginmenu ul{
+list-style-type: none;
+font-family: "Arial Unicode MS";
+font-size: 10px;
+}
+
+div#loginmenu ul li{
+display: inline;
+padding-left: 2px;
+color: white;
+}
+
+div#loginmenu ul li a{
+text-decoration: none;
+color: white;
+}
+/*------------------ LOGINMENU-END -------------------*/
+/*------------------ LOGOSCRIPT-START ------------------*/
+div#logoscript img{
+position: absolute;
+top: 10px;
+left: 1000px;
+}
+/*------------------ LOGOSCRIPT-END --------------------*/
+/*------------------ CONTENT-START ------------------*/
+
+div.content{
+position: absolute;
+width: 1280px;
+left: 50%;
+margin-left:-640px;
+min-height:500px;
+background-image: url("../../images/background_images/background.jpg");
+background-repeat: repeat-y;
+background-position: center center;
+}
+
+div.content img#title{
+position: absolute;
+left: 50%;
+z-index: 2;
+width: 450px;
+margin-top: 120px;
+margin-left: -300px;
+}
+
+div.content img#title2{
+position: absolute;
+left: 50%;
+z-index: 2;
+width: 450px;
+margin-top: 200px;
+margin-left: -300px;
+}
+
+div.content img#title_background{
+position: absolute;
+z-index: 0;
+margin-top: 90px;
+width: 1280px;
+left: 50%;
+margin-left:-640px;
+}
+
+div.content form{
+margin-top:  300px;
+margin-left: 250px;
+margin-bottom: 30px;
+color: black;
+font-size: 14px;
+}
+
+form textarea{
+border: 1px solid black;  
+background-color: #f4f1e4;
+color: black;
+}
+
+div.agree_btns{
+margin-top: 20px;
+margin-left: 200px;
+color: black;
+}
+
+div.btns{
+margin-top: 20px;
+margin-left: 270px;
+color: black;
+}
+
+div.btns input{
+border: 1px solid gray;  
+width: 50px;
+}
+
+/*------------------ CONTENT-END --------------------*/
+/*------------------ SIDEMENU-START ------------------*/
+div.submenu_top{
+position: absolute;
+z-index: -1;
+margin-top: -43px;
+margin-left: -37px;
+}
+
+div#sidemenu{
+position: absolute;
+z-index: 0;
+left: 50%;
+margin-left:365px;
+top: 130px;
+height: 600px;
+}
+
+
+div.sidelogo{
+margin-left: 15px;
+margin-bottom: 15px;
+}
+/*------------------ SIDEMENU-END --------------------*/
+/*----------------- FOOTERMENU-START -------------------*/
+div#footermenu{
+background-image: url("../../images/background_images/footer_background.png");
+height: 100px;
+width: 1280px;
+z-index: 3;
+padding-top: 20px;
+left: 50%;
+margin-top: 980px;
+margin-left: -640px;
+position: absolute;
+}
+
+div#footermenu ul{
+font-size: 12px;
+}
+
+div#footermenu ul li{
+display: inline;
+padding-right: 20px;
+color: white;
+}
+
+div#footermenu ul li a{
+text-decoration: none;
+color: white;
+font-family: "Arial Unicode MS";
+}
+/*----------------- DISCLAIMER-START -------------------*/
+div#disclaimer{
+margin-bottom: 10px;
+}
+/*----------------- DISCLAIMER-END ---------------------*/
+
+/*----------------- FOOTERMENU-END ---------------------*/

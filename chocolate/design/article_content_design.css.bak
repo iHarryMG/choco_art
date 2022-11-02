@@ -1,0 +1,35 @@
+body{
+margin: 0px;
+background-color: #fffef5;
+}
+
+table{
+border-top: 2px solid #d84358;
+padding-top: 10px;
+margin-top: 30px;
+color: #505050;
+font-size: 14px;
+width: 600px;
+}
+
+hr{
+border-color: #e9b3c4;
+}
+
+table td a{
+color: #505050;
+font-size: 12px;
+font-weight: bold;
+text-decoration: none;
+}
+
+table td a#pagenum{
+padding-right: 10px;
+padding: 0px;
+font-size: 15px;
+color: #d84358;
+}
+
+table td a:hover{
+text-decoration: underline;
+}

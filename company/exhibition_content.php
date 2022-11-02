@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<HEAD>
+	<TITLE>"JejuChocoArt-in-PremiumChocolate"</TITLE>
+	<META http-equiv="X-UA-Compatible" content="IE=edge" />
+	<META http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <style type="text/css">
+	body{
+		margin: 0px;
+		background-color: white;
+	}
+	table#info{
+		margin-top: 20px;
+		font-size: 13px;
+		border-collapse: collapse;
+		color: #5e7e1c;
+		font-weight: bold;
+	}
+	table#info td{
+		border-top: 1px solid gray;
+		border-bottom: 1px solid gray;
+	}
+	table#info td#title{
+		background-color: #9bbb58;
+		color: white;
+		font-weight: bold;
+		width: 100px;
+	}
+	img#main_img{
+		border: 1px solid #1b3127;
+		margin-top: 10px;
+		margin: 20px;
+		margin-bottom: 10px;
+	}
+	div#btns_register input{
+		width: 50px;
+		border: 1px solid gray;
+	}
+	div#btns_register{
+		margin-left: 370px;
+	}
+	img{
+		border: 1px solid #1b3127;	
+	}
+  </style>
+ </HEAD>
+ <BODY>
+ 	<center>
+<?
+			include("../dbconn/common.php");
+			$add_read_num_sql = "update event set readnum = readnum+1 where event_id='$id'";
+            mysql_query($add_read_num_sql, $connect);  
+
+			$sql = "SELECT title, event_date, content FROM event where event_id='$id'";
+			$result = mysql_query($sql, $connect);
+			$record = mysql_fetch_array($result);
+			$content = nl2br($record[content]);
+?>
+			<table cellpadding=5 width=400 id="info">
+				<tr>
+					<td id="title">행사제목</td>
+					<td><?echo $record['title']?></td>
+				</tr>
+				<tr>
+					<td id="title">행사날짜</td>
+					<td><?echo $record['event_date']?></td>
+				</tr>
+				<tr>
+					<td id="title">행사내용</td>
+					<td><?echo $record['content']?></td>
+				</tr>
+
+<?
+			$imagesql = "SELECT image, comment FROM event_image where num='$num'";
+			$imageresult = mysql_query($imagesql, $connect);		
+			$imageRecord = mysql_fetch_array($imageresult);
+
+			$image = $imageRecord['image'];
+			$comment = $imageRecord['comment'];
+?>		
+				<tr>
+					<td id="title">작픔설명</td>
+					<td><?echo $comment?></td>
+				</tr>				
+			</table>
+		<img id="main_img" src="../uploaded_images/events/<?echo $image?>" width=400 height=400 border=0>
+		<table>
+			<tr>
+<?
+			$imagesql = "SELECT num, image FROM event_image where event_id='$id' order by num asc";
+			$imageresult = mysql_query($imagesql, $connect);
+			$row = mysql_num_rows($imageresult);
+
+			for($i = 0; $i < $row; $i++){
+				$num = mysql_result($imageresult, $i, 0);
+				$image = mysql_result($imageresult, $i, 1);
+				echo("<td><a href='$PHP_SELF?id=$id&num=$num'><img src='../uploaded_images/events/$image' width=50 height=50 border=0></td>");
+			}
+?>
+			</tr>
+		</table>
+	</center>
+	<div id="btns_register">
+		<input type="button" onclick="javascript:window.close()" value="닫기" style='cursor:hand'>
+	</div>
+<?
+			mysql_close($connect);
+?>
+ </BODY>
+</HTML>
+
